@@ -33,9 +33,9 @@ public class Two_Dimensional_Two_Link_Inverse_Kinematics {
 
 	private static double Beta1Finder(double Link1, double Link2, double R) {
 	/*
-	  		    							 / L1^2 + R^2 - L2^2 \
-			 					Beta1 =  cos^-1 ( ------------------- )
-							    			 \   2 * L1 * R      /
+					 / L1^2 + R^2 - L2^2 \
+			Beta1 =  cos^-1 ( ------------------- )
+					 \   2 * L1 * R      /
 	*/	
 		double a = ( Math.pow(Link1, 2) + Math.pow(R, 2) - Math.pow(Link2, 2)  )   /    (2 * Link1 * R);
 		double Beta2 = Math.acos(a);
@@ -49,9 +49,9 @@ public class Two_Dimensional_Two_Link_Inverse_Kinematics {
 
 	private static double AlphaFinder(double Link1, double Link2, double R) {
 	/*
-										  / L1^2 + L2^2 - R^2 \
-								 Alpha =  cos^-1 ( ------------------- )
-										  \   2 * L1 * L2     /
+					  / L1^2 + L2^2 - R^2 \
+			 Alpha =  cos^-1 ( ------------------- )
+					  \   2 * L1 * L2     /
 	*/
 		double a = ( Math.pow(Link1, 2) + Math.pow(Link2, 2) - Math.pow(R, 2)  )   /    (2 * Link1 * Link2);
 		double Alpha = Math.acos(a);
@@ -65,8 +65,4 @@ public class Two_Dimensional_Two_Link_Inverse_Kinematics {
 		double R = Math.sqrt(  Math.pow(Target_X_Coordinate, 2) + Math.pow(Target_Y_Coordinate, 2)   );  //finding out R
 		return R;
 	}
-	
-	
-	
-
 }
