@@ -38,8 +38,8 @@ public class Two_Dimensional_Two_Link_Inverse_Kinematics {
 					 \   2 * L1 * R      /
 	*/	
 		double a = ( Math.pow(Link1, 2) + Math.pow(R, 2) - Math.pow(Link2, 2)  )   /    (2 * Link1 * R);
-		double Beta2 = Math.acos(a);
-		return Beta2;
+		double Beta1 = Math.acos(a);
+		return Beta1;
 	}
 
 	private static Double Beta2Finder(double Target_X_Coordinate, double Target_Y_Coordinate) {
