@@ -1,6 +1,8 @@
 # 2-Link-Robots-Inverse-Kinematics-Solver-2Dimensional-Apr-2018
 Java code that calculates the joint angles of any arbitrary 2 link robot.
 
+The goal is to find Alpha & Beta.
+
 ## Steps
 - We first identify the point
 
@@ -20,3 +22,4 @@ Java code that calculates the joint angles of any arbitrary 2 link robot.
 
 ![alt text](https://raw.githubusercontent.com/Attaras/2-Link-Robots-Inverse-Kinematics-Solver-2Dimensional-Apr-2018/master/beta1.png)
 
+- Find Beta using the equation  Beta = 180 * ( ( Beta1 + Beta2 ) / PI )
