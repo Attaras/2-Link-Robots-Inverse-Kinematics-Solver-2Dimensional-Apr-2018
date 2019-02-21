@@ -16,7 +16,7 @@ The goal is to find Alpha & Beta.
 
 ![alt text](https://raw.githubusercontent.com/Attaras/2-Link-Robots-Inverse-Kinematics-Solver-2Dimensional-Apr-2018/master/Alpha.png)
 
-- Calculate Beta 2 which is equal to Y/X
+- Calculate Beta 2 which is equal to atan2 ( Y , X )
 
 - Calculate Beta 1
 
